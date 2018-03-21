@@ -26,7 +26,7 @@ public class GUI
 		//bartBArray[0] = new JButton(bartIArray[0]);
 		
 		
-		aPanel.add(bartBArray[0]);
+		aPanel.add(bartBArray[i]);
 		aFrame.setContentPane(aPanel);
 		
 		aFrame.setVisible(true);
