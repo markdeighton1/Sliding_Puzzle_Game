@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.Event.*;
 
 public class GUI 
 {
@@ -8,7 +7,7 @@ public class GUI
 	ImageIcon[] bartIArray = new ImageIcon[12];
 	JButton[] bartBArray = new JButton[12];
 	
-	public void addImages()
+	public void add()
 	{
 		for(int i = 0; i < 12; i ++)
 		{
@@ -23,7 +22,7 @@ public class GUI
 	{
 		
 		JFrame aFrame = new JFrame();
-		JPanel aPanel =  new JPanel(new FlowLayout(FlowLayout.LEFT));
+		JPanel aPanel =  new JPanel(new GridLayout(4,3));
 		
 		
 		//bartIArray[0] = new ImageIcon("bin/bart0.jpg");
