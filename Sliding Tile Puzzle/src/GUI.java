@@ -25,8 +25,12 @@ public class GUI
 		//bartIArray[0] = new ImageIcon("bin/bart0.jpg");
 		//bartBArray[0] = new JButton(bartIArray[0]);
 		
+		for(int i = 0; i < 12; i++)
+		{
+			aPanel.add(bartBArray[i]);
+		}
 		
-		aPanel.add(bartBArray[i]);
+		//aPanel.add(bartBArray[i]);
 		aFrame.setContentPane(aPanel);
 		
 		aFrame.setVisible(true);
