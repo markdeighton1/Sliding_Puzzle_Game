@@ -26,7 +26,7 @@ public class Swap implements ActionListener // Implements ActionListener(pretty 
 					Swap.getBartBArray()[Swap.getBlankTile()].setIcon(Swap.getBartBArray()[i].getIcon()); 
 					//Sets Image to blank tile
 					Swap.getBartBArray()[i].setIcon(Swap.getBartIArray()[0]);
-					//Updates postion of blank tile
+					//Updates position of blank tile
 					Swap.setBlankTile(i);
 				}
 			}
