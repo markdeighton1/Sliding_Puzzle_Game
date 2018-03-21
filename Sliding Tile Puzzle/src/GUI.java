@@ -8,18 +8,22 @@ public class GUI
 	ImageIcon[] bartIArray = new ImageIcon[12];
 	JButton[] bartBArray = new JButton[12];
 	
+	public void addImages()
+	{
+		for(int i = 0; i < 12; i ++)
+		{
+			bartIArray[i] = new ImageIcon("bin/bart" + i +  ".jpg");
+			bartBArray[i] = new JButton(bartIArray[i]);
+		}
+		
+		
+	}
 	
 	public GUI()
 	{
 		
 		JFrame aFrame = new JFrame();
 		JPanel aPanel =  new JPanel(new FlowLayout(FlowLayout.LEFT));
-		
-		for(int i = 0; i < 12; i ++)
-		{
-			bartIArray[i] = new ImageIcon("bin/bart" + i +  ".jpg");
-			bartBArray[i] = new JButton(bartIArray[i]);
-		}
 		
 		
 		//bartIArray[0] = new ImageIcon("bin/bart0.jpg");
@@ -32,7 +36,7 @@ public class GUI
 		
 		//aPanel.add(bartBArray[i]);
 		aFrame.setContentPane(aPanel);
-		
+		aFrame.setTitle("Swingin' Simpsons");
 		aFrame.setVisible(true);
 		aFrame.setSize(400,400);
 		aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
