@@ -7,18 +7,16 @@ public class GUI
 	ImageIcon[] bartIArray = new ImageIcon[12];
 	JButton[] bartBArray = new JButton[12];
 	
-	public void add()
+	public void addTo()
 	{
 		for(int i = 0; i < 12; i ++)
 		{
 			bartIArray[i] = new ImageIcon("bin/bart" + i +  ".jpg");
 			bartBArray[i] = new JButton(bartIArray[i]);
-		}
-		
-		
+		}	
 	}
 	
-	public GUI()
+	public void drawGUI()
 	{
 		
 		JFrame aFrame = new JFrame();
