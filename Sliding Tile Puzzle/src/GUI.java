@@ -23,17 +23,14 @@ public class GUI
 		JPanel aPanel =  new JPanel(new GridLayout(3,4));
 		
 		
-		//bartIArray[0] = new ImageIcon("bin/bart0.jpg");
-		//bartBArray[0] = new JButton(bartIArray[0]);
-		
 		for(int i = 0; i < 12; i++)
 		{
 			aPanel.add(bartBArray[i]);
 		}
 		
-		//aPanel.add(bartBArray[i]);
 		aFrame.setContentPane(aPanel);
 		aFrame.setTitle("Swingin' Simpsons");
+		aFrame.setResizable(false);
 		aFrame.setVisible(true);
 		aFrame.setSize(450,400);
 		aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
