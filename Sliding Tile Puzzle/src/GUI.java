@@ -2,7 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.Event.*;
 
-public class GUI {
+public class GUI 
+{
 
 	ImageIcon[] bartIArray = new ImageIcon[12];
 	JButton[] bartBArray = new JButton[12];
@@ -19,6 +20,7 @@ public class GUI {
 		
 		
 		aPanel.add(bartBArray[0]);
+		aFrame.setContentPane(aPanel);
 		
 	}
 	
