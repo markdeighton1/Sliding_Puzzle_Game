@@ -1,5 +1,6 @@
 import javax.swing.*; //Import for swing functions
 import java.awt.*; //Import for layout functions
+import java.awt.event.*;
 
 //Please don't make me explain this
 public class GUI 
@@ -67,13 +68,17 @@ public class GUI
 		aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Speaks for itself
 		
 	}
+	
+	
 	//As BartIArray is private, it needs a set method so that it can be used
-	public ImageIcon[] getBartIArray() {
+	public ImageIcon[] getBartIArray() 
+	{
 		return bartIArray;
 	}
 	//As BartIArray is private, it needs a set method so that it can be edited
-	public void setBartIArray(ImageIcon[] bartIArray) {
+	public void setBartIArray(ImageIcon[] bartIArray) 
+	{
 		this.bartIArray = bartIArray;
 	}
-	
+
 }
