@@ -22,9 +22,9 @@ public class Swap implements ActionListener
 			if(ActionEvent.getSource() == Swap.getBartBArray()[i])
 			{
 				
-				Swap.getBartBArray()[Swap.BlankTile].setIcon(Swap.getBartBArray()[i].getIcon());
+				Swap.getBartBArray()[Swap.getBlankTile()].setIcon(Swap.getBartBArray()[i].getIcon());
 				Swap.getBartBArray()[i].setIcon(Swap.getBartIArray()[0]);
-				Swap.BlankTile = i;
+				Swap.setBlankTile(i);
 				
 			}
 			

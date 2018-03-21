@@ -6,15 +6,15 @@ public class GUI
 
 	private ImageIcon[] bartIArray = new ImageIcon[12];
 	private JButton[] bartBArray = new JButton[12];
-	int BlankTile = 0;
+	private int BlankTile = 0;
 	
-	/*public int getBlankTile() {
+	public int getBlankTile() {
 		return BlankTile;
 	}
 
 	public void setBlankTile(int blankTile) {
 		BlankTile = blankTile;
-	}*/
+	}
 	
 	public void addTo()
 	{
