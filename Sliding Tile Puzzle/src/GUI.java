@@ -20,7 +20,7 @@ public class GUI
 	{
 		
 		JFrame aFrame = new JFrame();
-		JPanel aPanel =  new JPanel(new GridLayout(4,3));
+		JPanel aPanel =  new JPanel(new GridLayout(3,4));
 		
 		
 		//bartIArray[0] = new ImageIcon("bin/bart0.jpg");
