@@ -1,7 +1,5 @@
 import java.awt.event.*;
 
-import javax.swing.ImageIcon;
-
 public class Swap implements ActionListener 
 {
 	GUI Swap; // Declare variable to refer to object
@@ -21,11 +19,12 @@ public class Swap implements ActionListener
 			
 			if(ActionEvent.getSource() == Swap.getBartBArray()[i])
 			{
-				
-				Swap.getBartBArray()[Swap.getBlankTile()].setIcon(Swap.getBartBArray()[i].getIcon());
-				Swap.getBartBArray()[i].setIcon(Swap.getBartIArray()[0]);
-				Swap.setBlankTile(i);
-				
+				if(i == Swap.getBlankTile() -1 || i == Swap.getBlankTile() +1 ||i == Swap.getBlankTile() -4 || i == Swap.getBlankTile() +4)
+				{
+					Swap.getBartBArray()[Swap.getBlankTile()].setIcon(Swap.getBartBArray()[i].getIcon());
+					Swap.getBartBArray()[i].setIcon(Swap.getBartIArray()[0]);
+					Swap.setBlankTile(i);
+				}
 			}
 			
 		}
