@@ -35,7 +35,7 @@ public class GUI
 		aFrame.setContentPane(aPanel);
 		aFrame.setTitle("Swingin' Simpsons");
 		aFrame.setVisible(true);
-		aFrame.setSize(400,400);
+		aFrame.setSize(450,400);
 		aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
