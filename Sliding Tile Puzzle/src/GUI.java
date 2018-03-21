@@ -4,8 +4,8 @@ import java.awt.*;
 public class GUI 
 {
 
-	ImageIcon[] bartIArray = new ImageIcon[12];
-	JButton[] bartBArray = new JButton[12];
+	private ImageIcon[] bartIArray = new ImageIcon[12];
+	private JButton[] bartBArray = new JButton[12];
 	
 	public void addTo()
 	{
