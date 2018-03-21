@@ -15,7 +15,7 @@ public class Score {
 	}
 	public void drawGUI() 
 	{
-		
+		//
 	}
 	
 }
