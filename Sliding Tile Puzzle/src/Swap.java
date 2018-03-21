@@ -17,7 +17,7 @@ public class Swap implements ActionListener
 		{
 			
 			
-			if(ActionEvent.getSource() == Swap.bartBArray[i])
+			if(ActionEvent.getSource() == Swap.getBartBArray()[i])
 			{
 				
 			}

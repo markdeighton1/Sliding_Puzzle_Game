@@ -5,7 +5,7 @@ public class GUI
 {
 
 	private ImageIcon[] bartIArray = new ImageIcon[12];
-	JButton[] bartBArray = new JButton[12];
+	private JButton[] bartBArray = new JButton[12];
 	
 	public void addTo()
 	{
@@ -15,14 +15,9 @@ public class GUI
 		for(int i = 0; i < 12; i ++)
 		{
 			bartIArray[i] = new ImageIcon("bin/bart" + i +  ".jpg");
-			bartBArray[i] = new JButton(bartIArray[i]);
-			bartBArray[i].addActionListener(c);
+			getBartBArray()[i] = new JButton(bartIArray[i]);
+			getBartBArray()[i].addActionListener(c);
 		}	
-	}
-	
-	public JButton[] getButtonArray()
-	{
-		return bartBArray;
 	}
 	
 	public void drawGUI()
@@ -34,7 +29,7 @@ public class GUI
 		
 		for(int i = 0; i < 12; i++)
 		{
-			aPanel.add(bartBArray[i]);
+			aPanel.add(getBartBArray()[i]);
 		}
 		
 		aFrame.setContentPane(aPanel);
@@ -44,6 +39,14 @@ public class GUI
 		aFrame.setSize(450,400);
 		aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+	}
+
+	public JButton[] getBartBArray() {
+		return bartBArray;
+	}
+
+	public void setBartBArray(JButton[] bartBArray) {
+		this.bartBArray = bartBArray;
 	}
 	
 }
