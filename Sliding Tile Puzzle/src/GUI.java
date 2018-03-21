@@ -5,12 +5,12 @@ public class GUI
 {
 
 	private ImageIcon[] bartIArray = new ImageIcon[12];
-	private JButton[] bartBArray = new JButton[12];
+	JButton[] bartBArray = new JButton[12];
 	
 	public void addTo()
 	{
 		
-		Swap c = new Swap(this);
+		Swap c = new Swap(this); // create instance of swap
 		
 		for(int i = 0; i < 12; i ++)
 		{
@@ -18,6 +18,11 @@ public class GUI
 			bartBArray[i] = new JButton(bartIArray[i]);
 			bartBArray[i].addActionListener(c);
 		}	
+	}
+	
+	public JButton[] getButtonArray()
+	{
+		return bartBArray;
 	}
 	
 	public void drawGUI()
