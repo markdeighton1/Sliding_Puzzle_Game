@@ -22,6 +22,10 @@ public class GUI
 		aPanel.add(bartBArray[0]);
 		aFrame.setContentPane(aPanel);
 		
+		aFrame.setVisible(true);
+		aFrame.setSize(400,400);
+		aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 	}
 	
 }
