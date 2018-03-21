@@ -15,7 +15,7 @@ public class GUI
 		JFrame aFrame = new JFrame();
 		JPanel aPanel =  new JPanel(new FlowLayout(FlowLayout.LEFT));
 		
-		bartIArray[0] = new ImageIcon("/bart.jpg");
+		bartIArray[0] = new ImageIcon("bin/bart.jpg");
 		bartBArray[0] = new JButton(bartIArray[0]);
 		
 		
