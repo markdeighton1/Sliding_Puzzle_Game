@@ -7,7 +7,7 @@ public class Swap implements ActionListener // Implements ActionListener(pretty 
 	//Constructor so an instance of Swap can be created
 	public Swap(GUI c) 
 	{
-		Swap = c; 
+		Swap = c;
 	}
 	
 	//Create action performed method

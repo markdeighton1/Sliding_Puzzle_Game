@@ -1,6 +1,5 @@
 import javax.swing.*; //Import for swing functions
 import java.awt.*; //Import for layout functions
-import java.awt.event.*;
 
 //Please don't make me explain this
 public class GUI 
@@ -11,7 +10,8 @@ public class GUI
 	private int BlankTile = 0; //Private instance variable of BlankTile int to store the position of the blank tile
 	
 	//As BlankTile is private, it needs a get method so that it can be used
-	public int getBlankTile() {
+	public int getBlankTile() 
+	{
 		return BlankTile;
 	}
 
