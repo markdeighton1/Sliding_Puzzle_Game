@@ -9,10 +9,14 @@ public class GUI
 	
 	public void addTo()
 	{
+		
+		Swap c = new Swap(this);
+		
 		for(int i = 0; i < 12; i ++)
 		{
 			bartIArray[i] = new ImageIcon("bin/bart" + i +  ".jpg");
 			bartBArray[i] = new JButton(bartIArray[i]);
+			bartBArray[i].addActionListener(c);
 		}	
 	}
 	
