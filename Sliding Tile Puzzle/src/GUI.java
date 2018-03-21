@@ -29,7 +29,7 @@ public class GUI
 		for(int i = 0; i < 12; i ++) //Loop that iterates 12 times for the 12 images
 		{
 			//Store image thats from bin which name is bart + n number + .jpg into the array
-			getBartIArray()[i] = new ImageIcon("bin/bart" + i +  ".jpg"); 
+			getBartIArray()[i] = new ImageIcon("bart" + i +  ".jpg"); 
 			//Set each image onto each button
 			getBartBArray()[i] = new JButton(getBartIArray()[i]);
 			//When button is clicked it will call the instance of swap 
